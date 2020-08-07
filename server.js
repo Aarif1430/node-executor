@@ -1,3 +1,4 @@
+const { FALSE } = require("node-sass");
 /******/
 (function(modules) { // webpackBootstrap
     /******/ // The module cache
