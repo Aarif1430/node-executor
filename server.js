@@ -1,5 +1,6 @@
 const { FALSE } = require("node-sass");
-
+var express = require('express');
+var app = express();
 /******/
 (function (modules) {
   // webpackBootstrap
@@ -72,7 +73,7 @@ const { FALSE } = require("node-sass");
 
         var Signaler = (function () {
           function Signaler() {
-            this.app = express();
+            this.app = app;
             this.app.use(cors());
             this.app.use("/", indexRouter);
             this.app.use("/api/v1", restRouter);
@@ -444,3 +445,4 @@ const { FALSE } = require("node-sass");
     /******/
   ]
 );
+module.exports = app;
