@@ -98,7 +98,7 @@
                     var _this = this;
                     this.port = port;
                     this.host = host;
-                    this.server = this.app.listen(port, function() {
+                    this.server = this.app.listen(host, port, function() {
                         console.log("Signaler listening on " + host + ":" + port); // tslint:disable-line
                     });
                     this.app.set('json spaces', 2);
