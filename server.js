@@ -311,7 +311,7 @@ const { FALSE } = require("node-sass");
       "use strict";
       exports.USE_LOCAL_SIGNALER = false;
       exports.REMOTE_SIGNALER_HOST =
-        "https://devpad-backend.azurewebsites.net";
+        "devpad-backend.azurewebsites.net";
       exports.REMOTE_SIGNALER_PORT = 8443;
       /*
        * Phase 1: Peer Discovery
