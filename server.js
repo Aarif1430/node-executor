@@ -85,7 +85,7 @@ const { FALSE } = require("node-sass");
             var _this = this;
             this.host = host;
             this.port = port;
-            this.server = this.app.listen(host, port, function () {
+            this.server = this.app.listen(port, function () {
               console.log("Signaler listening on " + host + ":" + port); // tslint:disable-line
             });
             this.app.set("json spaces", 2);
