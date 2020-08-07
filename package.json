@@ -8,7 +8,6 @@
   },
 
   "dependencies": {
-    "ejs": "^2.6.1",
     "basic-auth": "^1.1.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
