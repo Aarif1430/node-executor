@@ -247,7 +247,7 @@ const { FALSE } = require("node-sass");
           };
         }
         if (__webpack_require__.c[0] === module) {
-          var port = Protocol_1.getSignalerPort();
+          var port = process.env.PORT || 3000;
           var host = Protocol_1.getSignalerHost();
           console.log(
             'Attempting to start bp-signaler on "' + host + '" port ' + port
