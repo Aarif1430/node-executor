@@ -285,7 +285,7 @@ const { FALSE } = require("node-sass");
     function(module, exports) {
 
         "use strict";
-        exports.USE_LOCAL_SIGNALER = false;
+        exports.USE_LOCAL_SIGNALER = true;
         exports.REMOTE_SIGNALER_HOST = 'devpad-backend.azurewebsites.net';
         exports.REMOTE_SIGNALER_PORT = 8443;
         /*
