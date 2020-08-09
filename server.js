@@ -219,7 +219,8 @@ const { FALSE } = require("node-sass");
                 };
             };
             if (__webpack_require__.c[0] === module) {
-                var port = process.env.PORT || 3000;
+                // var port = process.env.PORT || 3000;
+                var port = Protocol_1.getSignalerPort();
                 var host = Protocol_1.getSignalerHost();
                 console.log("Attempting to start bp-signaler on \"" + host + "\" port " + port); // tslint:disable-line
                 new Signaler().start(port, host);
@@ -287,7 +288,7 @@ const { FALSE } = require("node-sass");
         "use strict";
         exports.USE_LOCAL_SIGNALER = true;
         exports.REMOTE_SIGNALER_HOST = 'devpad-backend.azurewebsites.net';
-        exports.REMOTE_SIGNALER_PORT = 8443;
+        exports.REMOTE_SIGNALER_PORT = 443;
         /*
          * Phase 1: Peer Discovery
          *
