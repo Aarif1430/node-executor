@@ -8,8 +8,8 @@ var jsonParser = bodyParser.json();
 var node_rest_client = require("node-rest-client").Client;
 var rest_client = new node_rest_client();
 
-EXECUTOR_SERVER_URL = "https://devpad-executor.azurewebsites.net/build_and_run";
-// EXECUTOR_SERVER_URL = "https://docker-executor.herokuapp.com/build_and_run";
+// EXECUTOR_SERVER_URL = "https://devpad-executor.azurewebsites.net/build_and_run";
+EXECUTOR_SERVER_URL = "https://docker-executor.herokuapp.com/build_and_run";
 rest_client.registerMethod("build_and_run", EXECUTOR_SERVER_URL, "POST");
 
 router.post("/build_and_run", jsonParser, function (req, res) {
